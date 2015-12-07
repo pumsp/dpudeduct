@@ -1,0 +1,258 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="com.deductmark.pumsper.dpudeduct.showdata_activity"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    android:gravity="fill_horizontal|fill_vertical"
+    android:id="@+id/showdata">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar"
+        >
+
+    </include>
+    <!--<android.support.percent.PercentRelativeLayout-->
+
+        <!--android:id="@+id/lay5"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/appbar"-->
+        <!--android:gravity="center_vertical|center_horizontal|right"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:paddingRight="10dp">-->
+
+        <!--&lt;!&ndash;-->
+            <!--generate custom icon-->
+            <!--http://romannurik.github.io/AndroidAssetStudio/icons-generic.html?&ndash;&gt;-->
+
+        <!--<info.hoang8f.widget.FButton-->
+            <!--android:id="@+id/btn_edit"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="แก้ไข"-->
+            <!--android:drawableLeft="@drawable/ic_pen"-->
+            <!--android:textSize="20sp"-->
+            <!--fbutton:shadowHeight="2dp"-->
+            <!--fbutton:cornerRadius="0dp"-->
+            <!--android:textColor="@color/fbutton_color_amethyst"-->
+            <!--fbutton:buttonColor="#ffffff"-->
+            <!--fbutton:shadowColor="#ffffff"-->
+            <!--style="?android:attr/borderlessButtonStyle"-->
+            <!--fbutton:shadowEnabled="true"-->
+            <!--app:layout_marginLeftPercent="52%"-->
+            <!--android:singleLine="true"-->
+            <!-->-->
+
+        <!--</info.hoang8f.widget.FButton>-->
+
+    <!--</android.support.percent.PercentRelativeLayout>-->
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="20dp"
+
+        >
+
+
+        <TextView android:text="รหัสนักศึกษา"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            app:layout_marginLeftPercent="10%"
+            android:textSize="24sp"
+            android:textColor="@color/fbutton_color_midnight_blue"
+            android:textStyle="bold"
+            android:id="@+id/lbl_id"
+            android:gravity="fill_vertical" />
+
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/lay11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay1"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            app:layout_marginLeftPercent="24%"
+            android:text="550107030050"
+            android:textSize="20sp"
+            android:textColor="@color/fbutton_color_midnight_blue"
+            android:id="@+id/txt_id"
+            android:gravity="fill_vertical" />
+
+
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay2"
+        android:layout_below="@+id/lay11">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            app:layout_marginLeftPercent="10%"
+            android:text="ชื่อ-นามสกุล"
+            android:textSize="24sp"
+            android:textColor="@color/fbutton_color_midnight_blue"
+            android:id="@+id/lbl_name"
+            android:textStyle="bold"
+            android:gravity="fill_vertical" />
+
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay21"
+        android:layout_below="@+id/lay2">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pattanachon Rattanapinunchai"
+            app:layout_marginLeftPercent="24%"
+            android:textSize="20sp"
+            android:textColor="@color/fbutton_color_midnight_blue"
+            android:id="@+id/txt_name"
+            android:gravity="fill_vertical"
+            android:textIsSelectable="false"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/lay3"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay21">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="คณะ"
+            app:layout_marginLeftPercent="10%"
+            android:textSize="24sp"
+            android:textColor="@color/fbutton_color_midnight_blue"
+            android:id="@+id/lbl_fac"
+            android:textStyle="bold"
+            android:gravity="fill_vertical" />
+
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/lay31"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay3">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="วิศวกรรมศาสตร์"
+            app:layout_marginLeftPercent="24%"
+            android:textSize="20sp"
+            android:textColor="@color/fbutton_color_midnight_blue"
+            android:id="@+id/txt_fac"
+            android:gravity="fill_vertical" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/lay4"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay31">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="สาขา"
+            app:layout_marginLeftPercent="10%"
+            android:textSize="24sp"
+            android:textColor="@color/fbutton_color_midnight_blue"
+            android:id="@+id/lbl_dep"
+            android:textStyle="bold"
+            android:gravity="fill_vertical" />
+
+
+    </android.support.percent.PercentRelativeLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/lay41"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay4">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="วืศวกรรมคอมพิวเตอร์"
+            app:layout_marginLeftPercent="24%"
+            android:textSize="20sp"
+            android:id="@+id/txt_dep"
+            android:textColor="@color/fbutton_color_midnight_blue"
+            android:gravity="fill_vertical" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/lay6"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay41"
+        android:layout_marginTop="10dp"
+        android:paddingTop="25dp">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="ยกเลิก"
+            android:textColor="@android:color/white"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="2dp"
+            fbutton:buttonColor="@color/fbutton_color_carrot"
+
+            app:layout_widthPercent="35%"
+            app:layout_heightPercent="25%"
+            app:layout_marginLeftPercent="12%"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_deduct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="ตัดคะแนน"
+            android:textColor="@android:color/white"
+            fbutton:buttonColor="@color/fbutton_color_pomegranate"
+            app:layout_widthPercent="35%"
+            app:layout_heightPercent="25%"
+            app:layout_marginLeftPercent="55%"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="2dp"
+
+           />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+
+</RelativeLayout>

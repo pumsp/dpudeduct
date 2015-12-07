@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.deductmark.pumsper.dpudeduct.home_activity">
+
+    <item android:id="@+id/action_signout"
+        android:title="ออกจากระบบ"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_exit"
+        android:background="#6d03e2"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialog_deduct">
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/deduct_close"-->
+        <!--android:src="@drawable/ic_content_clear"-->
+        <!--android:clickable="true"-->
+        <!--android:layout_gravity="center_horizontal|right" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lin11">
+        <ImageButton
+            android:contentDescription="ปิด"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_content_clear"
+            android:clickable="true"
+            android:background="@android:color/white"
+            android:id="@+id/deduct_close_imb"
+            android:layout_gravity="end" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/d_til1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin11"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/deduct_mark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="คะแนนที่ตัด"
+            android:inputType="number"
+            android:focusable="true" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/d_til2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/d_til1"
+        android:layout_marginRight="16dp">
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/deduct_couse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="สาเหตุการตัดคะแนน"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/lay6"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_til2"
+        android:paddingTop="25dp"
+        android:gravity="center_vertical|center_horizontal">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/deduct_btn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="ตัดคะแนน"
+            android:textColor="@android:color/white"
+            app:buttonColor="@color/fbutton_color_pomegranate"
+            app:shadowEnabled="true"
+            app:shadowHeight="2dp"
+
+            />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:matProg_barColor="#6d03e2"
+        app:matProg_progressIndeterminate="true"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

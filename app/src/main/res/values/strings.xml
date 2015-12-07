@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">dpudeduct</string>
+    <string name="login_title">DPU DEDUCT</string>
+    <string name="username_title">ชื่อผู้ใช้งาน</string>
+    <string name="password_title">รหัสผ่าน</string>
+    <string name="button_login">เข้าสู่ระบบ</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_error_message">ชื่อผู้ใช้ หรือ รหัสผ่านผิด.</string>
+    <string name="title_activity_home_activity">HOME</string>
+    <string name="title_activity_showdata_activity">showdata</string>
+    <string name="title_activity_edit_activity">edit</string>
+
+    <string name="edit">แก้ไข</string>
+</resources>

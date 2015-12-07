@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.deductmark.pumsper.dpudeduct.home_activity"
+    >
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar"
+        >
+
+    </include>
+
+    <TextView android:text="  กรุณาแตะบัตร..." android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texter"
+        android:gravity="center"
+        android:layout_below="@+id/appbar"
+        android:layout_alignLeft="@+id/appbar"
+        android:layout_alignStart="@+id/appbar"
+        android:layout_marginTop="180dp"
+        android:padding="40dp"
+        android:singleLine="false"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/fbutton_color_asbestos" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showData"
+        android:id="@+id/btn_show"
+        android:layout_below="@+id/appbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit"
+        android:id="@+id/btn_edit"
+        android:layout_below="@+id/appbar"
+        android:layout_centerHorizontal="true" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        wheel:matProg_barColor="#6d03e2"
+        wheel:matProg_progressIndeterminate="true"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

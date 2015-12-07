@@ -1,0 +1,164 @@
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.deductmark.pumsper.dpudeduct.edit_activity"
+        android:background="@android:color/white"
+
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"
+
+
+            android:layout_marginRight="16dp">
+            <!--app:hintTextAppearance="@android:style/TextAppearance.Medium"-->
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="รหัสนักศึกษา"
+
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/til1"
+            android:id="@+id/til2"
+            android:baselineAligned="false"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_fname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ชื่อ"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_lname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="นามสกุล"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/til2"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <EditText
+                android:id="@+id/edt_fac"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="คณะ"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/til3"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_dep"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="สาขา"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.percent.PercentRelativeLayout
+
+            android:id="@+id/til5"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/til4"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_edt_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="ยกเลิก"
+                android:textColor="@android:color/white"
+                app:buttonColor="@color/fbutton_color_carrot"
+                app:shadowEnabled="true"
+                app:shadowHeight="2dp"
+                app:layout_widthPercent="35%"
+
+                app:layout_marginLeftPercent="10%"
+                android:height="50dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_edt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="บันทึก"
+                app:shadowHeight="2dp"
+                android:textColor="@android:color/white"
+                app:buttonColor="@color/fbutton_color_green_sea"
+                app:shadowEnabled="true"
+                app:layout_widthPercent="35%"
+
+                app:layout_marginLeftPercent="55%"
+                android:height="50dp" />
+
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress_center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:matProg_barColor="#6d03e2"
+            app:matProg_progressIndeterminate="true"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</ScrollView>

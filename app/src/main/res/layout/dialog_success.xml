@@ -1,0 +1,281 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.deductmark.pumsper.dpudeduct.showdata_activity"
+    android:id="@+id/dialog_suc">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_content_clear"
+        android:clickable="true"
+        android:background="@android:color/white"
+        android:id="@+id/suc_close"
+        android:contentDescription="ปิด"
+        android:layout_gravity="end" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sc_view"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/suc_lay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:text="รหัสนักศึกษา  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        app:layout_marginLeftPercent="10%"
+                        android:textSize="20sp"
+                        android:textColor="@color/fbutton_color_midnight_blue"
+                        android:textStyle="bold"
+                        android:id="@+id/lbl_id"
+                        android:gravity="center_vertical|fill_vertical" />
+
+
+
+                </android.support.percent.PercentRelativeLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="550107030050"
+                    android:textSize="20sp"
+                    android:textColor="@color/fbutton_color_midnight_blue"
+                    android:id="@+id/suc_id"
+                    android:gravity="center_vertical|fill_vertical" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lay2"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        app:layout_marginLeftPercent="10%"
+                        android:text="ชื่อ-นามสกุล  "
+                        android:textSize="16sp"
+                        android:textColor="@color/fbutton_color_midnight_blue"
+                        android:id="@+id/lbl_name"
+                        android:textStyle="bold"
+                        android:gravity="fill_vertical" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="วิสุทธิ์เทพ เชิญรัตนรักษ์"
+                    android:textSize="16sp"
+                    android:textColor="@color/fbutton_color_midnight_blue"
+                    android:id="@+id/suc_name"
+                    android:gravity="fill_vertical" />
+            </LinearLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/lay3"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+              >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="คณะ"
+                    app:layout_marginLeftPercent="10%"
+                    android:textSize="16sp"
+                    android:textColor="@color/fbutton_color_midnight_blue"
+                    android:id="@+id/lbl_fac"
+                    android:textStyle="bold"
+                    android:gravity="fill_vertical" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="วิศวกรรมศาสตร์"
+                    app:layout_marginLeftPercent="24%"
+                    android:textSize="16sp"
+                    android:textColor="@color/fbutton_color_midnight_blue"
+                    android:id="@+id/suc_fac"
+                    android:gravity="fill_vertical" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/lay4"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="สาขา"
+                    app:layout_marginLeftPercent="10%"
+                    android:textSize="16sp"
+                    android:textColor="@color/fbutton_color_midnight_blue"
+                    android:id="@+id/lbl_dep"
+                    android:textStyle="bold"
+                    android:gravity="fill_vertical" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="วิศวกรรมคอมพิวเตอร์"
+                    app:layout_marginLeftPercent="24%"
+                    android:textSize="16sp"
+                    android:id="@+id/suc_dep"
+                    android:textColor="@color/fbutton_color_midnight_blue"
+                    android:gravity="fill_vertical" />
+
+            </android.support.percent.PercentRelativeLayout>
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/lay41"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               >
+
+
+
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/lay5"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="คะแนนที่ตัด  "
+                        app:layout_marginLeftPercent="10%"
+                        android:textSize="20sp"
+                        android:textColor="@color/fbutton_color_midnight_blue"
+                        android:id="@+id/lbl_mark"
+                        android:textStyle="bold"
+                        android:gravity="fill_vertical" />
+
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="100"
+                    android:textSize="20sp"
+                    android:id="@+id/suc_mark"
+                    android:textColor="@color/fbutton_color_alizarin"
+                    android:gravity="fill_vertical" />
+
+            </LinearLayout>
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/lay51"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:text="สาเหตุการตัดคะแนน"
+                    app:layout_marginLeftPercent="10%"
+                    android:textSize="20sp"
+                    android:textColor="@color/fbutton_color_midnight_blue"
+                    android:id="@+id/lbl_cause"
+                    android:textStyle="bold"
+                    android:gravity="fill_vertical" />
+
+
+            </android.support.percent.PercentRelativeLayout>
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/lay61"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+              >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="            ทำถูกแล้วที่เธอเลือกเขาแล้วทิ้งฉันไว้ตรงกลางทางเมื่อตัวเธอบพบคนที่ดีที่เธอวาดไว้ในหัวใจปล่อยมือฉันถูกแล้ว ให้ใจของฉันปวดร้าวแค่ไหน"
+                    app:layout_marginLeftPercent="10%"
+                    android:textSize="16sp"
+                    android:id="@+id/suc_cause"
+                    android:textColor="@color/fbutton_color_alizarin"
+                    android:minLines="3"
+
+                    />
+            </android.support.percent.PercentRelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    >
+    <info.hoang8f.widget.FButton
+        android:id="@+id/suc_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="ปิด"
+        android:textColor="@android:color/white"
+        app:buttonColor="@color/fbutton_color_green_sea"
+        app:shadowEnabled="true"
+        app:shadowHeight="2dp"
+
+         />
+</LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
